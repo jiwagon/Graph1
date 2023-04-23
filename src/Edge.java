@@ -9,6 +9,16 @@ public class Edge {
         }
 
 
+        @Override
+        public String toString(){
+                StringBuilder str = new StringBuilder();
+                str.append(String.format("-- %.2f  -> %s  ", this.getWeight(),this.eVertex.getName()));
 
+                return str.toString();
+        }
+
+        private double getWeight() {
+                return this.weight;
+        }
 
 }

@@ -9,4 +9,8 @@ public class Vertex {
                 this.vName = name;
                 this.edges = new ArrayList<Edge>();
         }
+
+        public String getName() {
+                return this.vName;
+        }
 }
