@@ -49,19 +49,19 @@ public class Graph {
             end = this.vertices.get(endPos);
         }
 
-//        for (int i = 0; i < start.edges.size(); i++) {
-//            if (start.edges.get(i).eVertex.vName == endVer) {
-//                    System.out.println("End Edge already exists in Graph");
-//                    return;
-//                }
-//            }
-//
-//        for (int i = 0; i < start.edges.size(); i++) {
-//            if (end.edges.get(i).eVertex.vName.equals(startVer)) {
-//                System.out.println("Start Edge already exists in Graph");
-//                return;
-//            }
-    //}
+        for (int i = 0; i < start.edges.size(); i++) {
+            if (start.edges.get(i).eVertex.vName == endVer) {
+                    System.out.println("End Edge already exists in Graph");
+                    return;
+                }
+            }
+
+        for (int i = 0; i < start.edges.size(); i++) {
+            if (end.edges.get(i).eVertex.vName.equals(startVer)) {
+                System.out.println("Start Edge already exists in Graph");
+                return;
+            }
+    }
 
             // Add same edge from end to start
             start.edges.add(new Edge(end, wt));
